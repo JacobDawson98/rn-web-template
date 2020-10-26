@@ -41,6 +41,13 @@ const imageLoaderConfiguration = {
   }
 };
 
+const typescriptConfiguration = {
+  test: ,
+  use: {
+
+  },
+};
+
 module.exports = {
   entry: [
     // load any web API polyfills
@@ -72,7 +79,7 @@ module.exports = {
     // If you're working on a multi-platform React Native app, web-specific
     // module implementations should be written in files using the extension
     // `.web.js`.
-    extensions: [ '.web.js', '.js' ]
+    extensions: [ '.web.js', '.js', '.ts', '.tsx', '.web.ts', '.web.tsx' ]
   }
 }
 
