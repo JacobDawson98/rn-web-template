@@ -13,10 +13,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack serve -d --config ./web/webpack.config.js --inline --hot --colors",
+    "build": "webpack -p --config ./web/webpack.config.js"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-plugin-react-native-web": "^0.14.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
